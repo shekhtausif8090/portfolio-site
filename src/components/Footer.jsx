@@ -1,54 +1,73 @@
-import { Heart, Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Send } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white section-padding">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold mb-2">Shekh Tausif</h3>
-            <p className="text-gray-400">
-              Frontend Developer | React & Next.js Specialist
-            </p>
-          </div>
+    <section className="py-32 px-6">
+      <div className="max-w-2xl mx-auto text-center">
+        <h2 className="text-[#64ffda] font-mono text-base mb-4">
+          04. What's Next?
+        </h2>
+        <h3 className="text-4xl md:text-5xl font-bold text-[#ccd6f6] mb-6">
+          Get In Touch
+        </h3>
 
-          <div className="flex gap-6">
-            <a
-              href="mailto:shekhtausif8090@gmail.com"
-              className="p-3 bg-gray-800 rounded-lg hover:bg-primary transition-all transform hover:scale-110"
-              aria-label="Email"
-            >
-              <Mail size={24} />
-            </a>
-            <a
-              href="https://linkedin.com/in/shekhtausif8090"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-gray-800 rounded-lg hover:bg-primary transition-all transform hover:scale-110"
-              aria-label="LinkedIn"
-            >
-              <Linkedin size={24} />
-            </a>
-            <a
-              href="https://github.com/shekhtausif8090"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-gray-800 rounded-lg hover:bg-primary transition-all transform hover:scale-110"
-              aria-label="GitHub"
-            >
-              <Github size={24} />
-            </a>
-          </div>
+        <p className="text-gray-400 text-lg leading-relaxed mb-12 max-w-xl mx-auto">
+          Currently I'm looking for new and challenging opportunities. Whether
+          you have a question, want to collaborate, or just want to say hi, my
+          inbox is always open. I'll try my best to get back to you!
+        </p>
+
+        <a
+          href="mailto:shekhtausif8090@gmail.com"
+          className="inline-flex items-center gap-2 border-2 border-[#64ffda] text-[#64ffda] px-8 py-4 rounded hover:bg-[#64ffda]/10 transition-all font-mono text-lg group"
+        >
+          <Send
+            size={20}
+            className="group-hover:translate-x-1 transition-transform"
+          />
+          Say Hello
+        </a>
+
+        <div className="flex justify-center gap-8 mt-16 mb-12">
+          <a
+            href="https://linkedin.com/in/shekhtausif8090"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-[#64ffda] transition-all hover:-translate-y-1"
+          >
+            <Linkedin size={24} />
+          </a>
+          <a
+            href="https://github.com/shekhtausif8090"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-[#64ffda] transition-all hover:-translate-y-1"
+          >
+            <Github size={24} />
+          </a>
+          <a
+            href="mailto:shekhtausif8090@gmail.com"
+            className="text-gray-400 hover:text-[#64ffda] transition-all hover:-translate-y-1"
+          >
+            <Mail size={24} />
+          </a>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p className="flex items-center justify-center gap-2">
-            Built with <Heart size={16} className="text-red-500" /> using React
-            + Tailwind CSS
+        <div className="text-center">
+          <a
+            href="mailto:shekhtausif8090@gmail.com"
+            className="text-gray-400 hover:text-[#64ffda] font-mono text-sm mb-2 block"
+          >
+            shekhtausif8090@gmail.com
+          </a>
+          <p className="text-gray-500 font-mono text-xs">
+            Designed & Built by Shekh Tausif
           </p>
-          <p className="mt-2">© 2025 Shekh Tausif. All rights reserved.</p>
+          <p className="text-gray-600 text-xs mt-1">
+            © 2025 Shekh Tausif. All Rights Reserved.
+          </p>
         </div>
       </div>
-    </footer>
+    </section>
   );
 }
